@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>القيادة العلياء — الصفحة الرئيسية</title>
+  <style>
+    :root{font-family: "Segoe UI", Tahoma, Arial, sans-serif; color:#222}
+    body{margin:0;padding:0;background:#f7f7f8;line-height:1.6}
+    .container{max-width:1000px;margin:30px auto;padding:20px;background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:72px;height:72px;border-radius:12px;background:#e9eef8;display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:22px}
+    p.lead{color:#444;margin-top:8px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}
+    @media(min-width:760px){.grid{grid-template-columns:1fr 320px}}
+    .card{padding:16px;border-radius:10px;background:#fbfbff;border:1px solid #f0f0f3}
+    .services li{margin-bottom:8px}
+    .contact{display:flex;flex-direction:column;gap:8px}
+    a.button{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;background:#2563eb;color:#fff}
+    footer{margin-top:20px;text-align:center;color:#666;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="brand">
+        <div class="logo">القيادة العلياء</div>
+        <div>
+          <h1>القيادة العلياء</h1>
+          <p class="lead">نوصلك للعالم بخدمات إعلانية احترافية</p>
+        </div>
+      </div>
+      <nav>
+        <a class="button" href="#contact">تواصل معنا</a>
+      </nav>
+    </header>
+
+    <section class="grid" aria-label="المحتوى الرئيسي">
+      <div>
+        <div class="card">
+          <h2>من نحن</h2>
+          <p>نحن القيادة العلياء، نقدم خدمات متميزة في مجال الترويج والإعلانات. نسعى لتقديم جودة عالية وخدمة عملاء سريعة وموثوقة.</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h2>خدماتنا</h2>
+          <ul class="services">
+            <li><strong>إدارة الحملات الإعلانية:</strong> تنظيم الحملات لتحقيق أفضل نتائج.</li>
+            <li><strong>تصميم المحتوى الدعائي:</strong> تصميم إعلانات جذابة وفعالة.</li>
+            <li><strong>النشر في القنوات والمنصات:</strong> ضمان وصول الإعلان للجمهور المستهدف.</li>
+            <li><strong>استهداف الجمهور بدقة:</strong> الوصول للفئة المناسبة بسهولة.</li>
+            <li><strong>تقارير ونتائج فورية:</strong> متابعة أداء الحملات وتحسينها بشكل مستمر.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h2>لماذا نحن؟</h2>
+          <ul>
+            <li>جودة مضمونة</li>
+            <li>خدمة سريعة وموثوقة</li>
+            <li>دعم فني متواصل</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 id="contact">تواصل معنا</h3>
+        <div class="contact">
+          <div><strong>الهاتف:</strong> +967781408671</div>
+          <div><strong>البريد:</strong> abwlymwsst26@gmail.com</div>
+          <div><strong>الموقع:</strong> www.yourcompany.com</div>
+          <a class="button" href="https://wa.me/967781408671?text=مرحباً">راسلنا على واتساب</a>
+        </div>
+        <hr style="margin:12px 0">
+        <h4>نص ترويجي</h4>
+        <p>"القيادة العلياء تقدم لك أفضل خدمات مروج إعلانات — تواصل الآن واحصل على عرض خاص!"</p>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> القيادة العلياء. جميع الحقوق محفوظة.
+    </footer>
+  </div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
